@@ -1,0 +1,3 @@
+READ POINT 1.
+
+To enable email functionality in this project, I use msmtp, a lightweight SMTP client for Unix-based systems. First, install msmtp(tool of smtp protocol) and configure it using a .msmtprc file in the home directory. This file contains SMTP server details (like mailermood@gmail.com for Gmail), sender email, and an app-specific password (generated from your Google Account with 2FA enabled). After setting the proper permissions (chmod 600 ~/.msmtprc), the script can send automated emails using simple shell commands. This allows sending mood-based email reports to any user’s inbox seamlessly through the Gmail SMTP service.
